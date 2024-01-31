@@ -28,7 +28,10 @@ module Provider
                          CloudIds: 'CloudIDS',
                          CloudIot: 'CloudIOT',
                          Cloudfunctions2: 'CloudFunctions2',
-                         Pubsub: 'PubSub' }.freeze
+                         Pubsub: 'PubSub',
+                         TpuV2: 'TPUV2',
+                         Edgenetwork: 'EdgeNetwork',
+                         Biglake: 'BigLake' }.freeze
     OBJECT_NAME_MAP = { Api: 'API',
                         Dns: 'DNS',
                         Dicom: 'DICOM',
@@ -41,7 +44,15 @@ module Provider
                         Nat: 'NAT',
                         Saml: 'SAML',
                         Ssl: 'SSL',
-                        Url: 'URL' }.freeze
+                        Url: 'URL',
+                        Vm: 'VM',
+                        Grpc: 'GRPC',
+                        Http: 'HTTP',
+                        Tcp: 'TCP',
+                        Tls: 'TLS',
+                        BiReservation: 'BIReservation',
+                        HTTPs: 'HTTPS',
+                        Https: 'HTTPS' }.freeze
 
     def generating_hashicorp_repo?
       # This code is not used when generating TPG/TPGB
